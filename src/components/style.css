@@ -1,21 +1,23 @@
-header{
-    background: url(../startup.jpg);
-    background-size: cover;
-    background-position: center;
-    min-height: 1000px;
-  }
-  @media screen and (max-width: 670px){
-    header{
-      min-height: 500px;
-    }
-  }
+
   .section{
     padding-top: 4vw;
     padding-bottom: 4vw;
   }
+  .section p{
+    font-size: 25px;
+  }
   .tabs .indicator{
-    background-color: #1a237e;
+    background-color: #616161 ;
   }
   .tabs .tab a:focus, .tabs .tab a:focus.active{
-    background: transparent;
+    background: #bdbdbd  ;
   }
+  form{
+  padding: 20px;
+  }
+  form .input-field{
+    font-size: 20px;
+  }
+nav ul a{
+  font-size: 20px;
+}

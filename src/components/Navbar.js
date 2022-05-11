@@ -1,19 +1,21 @@
 import React from 'react'
 import './style.css'
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div> <header>
-    <nav className="nav-wrapper indigo">
+    <nav className="nav-wrapper blue-grey darken-4">
       <div className="container">
-        <a href="#" className="brand-logo left hide-on-med-and-down">
+        <a href="/" className="brand-logo left hide-on-med-and-down">
           MARY.AI 
         </a>
-        <a href="#" className="sidenav-trigger" data-target="mobile-menu">
+        <a href="/" className="sidenav-trigger" data-target="mobile-menu">
           <i className="material-icons">menu</i>
         </a>
         <ul className="right hide-on-med-and-down">
           <li>
-            <a href="#">Photo's</a>
+            
+            <a href="/list">Companies</a>
           </li>
           <li>
             <a href="#">Services</a>
