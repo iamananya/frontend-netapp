@@ -8,119 +8,93 @@ function Hero() {
      <Navbar/>
       <section className="container section scrollspy" id="photos">
         <div className="row">
-          <div className="col s12 l4">
+          <div className="col s12 l8">
             <img
-              src="img.jpg"
+              src="graph3.png"
               alt=""
-              className="responsive-img materialboxed"
+              className="responsive-img "
             ></img>
           </div>
-          <div className="col s12 l6 offset-l1">
-            <h2 className="indigo-text text-darken-4">Portraits</h2>
+          <div className="col s12 l4">
+            <h2 className="indigo-text text-darken-4">Target Markets</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+              Our dataset comprises of a diverse set of markets. 
+              Let's take a look at the most popular markets that startups are pusuing currently worldwide.
             </p>
           </div>
         </div>
+        <div class="row">
+      <div class="col s12 l6  push-l7">
+          <img src="graph4.png" alt="" class="responsive-img materialboxed"/>
+      </div>
+      <div class="col s12 l6  pull-l5 right-align">
+        <h2 class="indigo-text text-darken-4">Investment</h2>
+        <p>We are working with a huge variety of business models. 
+              Here is an attempt to understand the role of total investment in the success and failure of a model.</p>
+      </div>
+    </div>
+        
         <div className="row">
-          <div className="col s12 l4 offset-l1 push-l7">
+          <div className="col s12 l6">
             <img
-              src="img.jpg"
+              src="graph5.png"
               alt=""
               className="responsive-img materialboxed"
             ></img>
           </div>
-          <div className="col s12 l6 offset-l1 pull-l5 right-align">
-            <h2 className="indigo-text text-darken-4">Cityscapes</h2>
+          <div className="col s12 l4 offset-l1">
+            <h2 className="indigo-text text-darken-4">Impact Regions</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col s12 l4">
-            <img
-              src="img.jpg"
-              alt=""
-              className="responsive-img materialboxed"
-            ></img>
-          </div>
-          <div className="col s12 l6 offset-l1">
-            <h2 className="indigo-text text-darken-4">Nature</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+              We are also considering markets and models spread out across multiple regions to understand the trend of investment and growth worldwide.
+              
             </p>
           </div>
         </div>
       </section>
+
+
       <div className="parallax-container">
         <div className="parallax">
-          <img src="img.jpg" alt="" className="responsive-img"></img>
+          <img src="wordcloud.png" alt="" className="responsive-img"></img>
         </div>
       </div>
-      <section className="section container scrollspy" id="services">
-        <div className="row">
-          <div className="col s12 l4">
-            <h2 className="indigo-text text-darken-4">What I do..</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            </p>
-            <p>
-              Mauris dolor augue, vulputate in pharetra ac, facilisis nec
-              libero. Fusce condimentum gravida urna, vitae scelerisque erat
-              ornare nec.
-            </p>
-          </div>
-          <div className="col s12 l6 ">
-            <ul className="tabs">
-              <li className="tab col s6">
-                <a
-                  href="#photography"
-                  className="active indigo-text text-darken-4"
-                >
-                  Photography
-                </a>
-              </li>
-              <li className="tab col s6">
-                <a href="#editing" className="indigo-text text-darken-4">
-                  Editing
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="photography" className="col s12">
-            <p className="flow-text indigo-text text-darken-4">Photography</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            </p>
-            <p>
-              Mauris dolor augue, vulputate in pharetra ac, facilisis nec
-              libero. Fusce condimentum gravida urna, vitae scelerisque erat
-              ornare nec.
-            </p>
-          </div>
-          <div id="editing" className="col s12">
-            <p className="flow-text indigo-text text-darken-4">Editing</p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            </p>
-            <p>
-              Mauris dolor augue, vulputate in pharetra ac, facilisis nec
-              libero. Fusce condimentum gravida urna, vitae scelerisque erat
-              ornare nec.
-            </p>
-          </div>
+
+      <section class="section container" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What We do..</h2>
+        <p>We provide services to both startups and investors through our cutting edge AI technology </p>
+        <p>We conduct data analytics and visualisation and evaluate the business models through our technology trained on real time data from the current market</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+       
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active indigo-text text-darken-4">Startup</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4">Investor</a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Startup</p>
+            <p>Startups that are currently looking for funding and an idea about how they fit into the market</p>
+            <p>We conduct in depth analysis and forecasting of their model so that they have a good idea of what investors are looking at and how they will perfom in the current market</p>
         </div>
-      </section>
+        <div id="editing" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Investor</p>
+            <p>In order to evaluate a business model for investment investors need an idea about the individual as well as comparative performance of a model </p>
+            <p>We here at MARY.AI give investors the tools to evaluate the startups and set up a benchmark in the market for them to understand the business model's fit</p>
+        </div>
+        </div>
+      </div>
+    
+  </section>
+
+      
       <div className="parallax-container">
         <div className="parallax">
-          <img src="img.jpg" alt="" className="responsive-img" />
+          <img src="parallax2.jpg" alt="" className="responsive-img" />
         </div>
       </div>
       <section className="section container scrollspy" id="contact">
@@ -128,23 +102,12 @@ function Hero() {
           <div className="col s12 l5">
             <h2 className="indigo-text text-darken-4">Get in Touch</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+              If you are a startup that wants to raise funding and are eager to know about an investor's insights or the market dynamics then reach out to us and we will be happy to help you!
             </p>
             <p>
-              Mauris dolor augue, vulputate in pharetra ac, facilisis nec
-              libero. Fusce condimentum gravida urna, vitae scelerisque erat
-              ornare nec.
+              If you are investor who wants to evaluate a startup model and understand if it is a good fit in the current market and appropriate for investment then MARY.AI is the right place for you!
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
-            </p>
-            <p>
-              Mauris dolor augue, vulputate in pharetra ac, facilisis nec
-              libero. Fusce condimentum gravida urna, vitae scelerisque erat
-              ornare nec.
-            </p>
+            
           </div>
           <div className="col s12 l5 offset-l2">
             <form>
@@ -166,20 +129,20 @@ function Hero() {
               <div className="input-field">
                 <i className="material-icons prefix">date_range</i>
                 <input type="text" id="date" className="datepicker" />
-                <label for="date">Choose a date you need me for...</label>
+                <label for="date">Choose a date you need us for...</label>
               </div>
               <div className="input-field">
                 <p>Services required:</p>
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Photography</span>
+                    <span>Startup</span>
                   </label>
                 </p>
                 <p>
                   <label>
                     <input type="checkbox" />
-                    <span>Photo Editing</span>
+                    <span>Investor</span>
                   </label>
                 </p>
               </div>
@@ -194,14 +157,14 @@ function Hero() {
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <h5>About Me</h5>
+              <h5>About Us</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum at lacus congue.
+                We are a small team of hustlers trying to make an impact on the world of startup investing by integrating cutting edge technology to guide investment decisions.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.
+              Our mission is to ensure that the benefits of AI/ML reach the startup world and allow investors to make informed decisions.
+
+                
               </p>
             </div>
             <div className="col l4 offset-l2 s12">
@@ -232,7 +195,7 @@ function Hero() {
           </div>
         </div>
         <div className="footer-copyright grey darken-4">
-          <div className="container center-align">&copy; 2018 Photo Ninja</div>
+          <div className="container center-align">&copy; 2022 MARY.AI</div>
         </div>
       </footer>
     </div>

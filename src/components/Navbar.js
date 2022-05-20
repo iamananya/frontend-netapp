@@ -5,8 +5,8 @@ function Navbar() {
     <div> <header>
     <nav className="nav-wrapper indigo">
       <div className="container">
-        <a href="#" className="brand-logo left">
-          Photo Ninja
+        <a href="#" className="brand-logo left hide-on-med-and-down">
+          MARY.AI 
         </a>
         <a href="#" className="sidenav-trigger" data-target="mobile-menu">
           <i className="material-icons">menu</i>
@@ -53,6 +53,7 @@ function Navbar() {
           </li>
         </ul>
         <ul className="sidenav grey lighten-2" id="mobile-menu">
+          <h2>MARY.AI</h2>
           <li>
             <a href="#">Photo's</a>
           </li>
