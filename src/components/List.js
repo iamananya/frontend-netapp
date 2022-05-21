@@ -70,7 +70,7 @@ function ListComp() {
                 <tbody>
                   {comp.map((i) => (
                     <tr>
-                      <td>{i.name}</td>
+                      <td>{i.company_name}</td>
                       <td>{i.market}</td>
                       <td>{i.country_code}</td>
                       <td>{i.status}</td>
