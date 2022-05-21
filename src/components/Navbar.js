@@ -18,7 +18,7 @@ function Navbar() {
             <a href="/list">Companies</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a href="/charts">Visualizations</a>
           </li>
           <li>
             <a href="#">Contact</a>
