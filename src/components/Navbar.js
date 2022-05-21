@@ -21,7 +21,7 @@ function Navbar() {
           <Link to="/charts" class="black-text">Visualizations</Link>
           </li>
           <li>
-            <a href="#" class="black-text">Contact</a>
+            <Link to="/finances" class="black-text">Finances</Link>
           </li>
           <li>
             <a
