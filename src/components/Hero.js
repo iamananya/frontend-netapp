@@ -5,17 +5,52 @@ function Hero() {
   return (
     <div>
       {" "}
-     <Navbar/>
+      <div className="parallax-container">
+        <div className="parallax">
+          <img src="startup.jpg" alt="" className="responsive-img"></img>
+        </div>
+      </div>
+      <section class="section container" id="services">
+    <div class="row ">
+      <div class="col s12 l4">
+        <h2 class="indigo-text text-darken-4">What We do..</h2>
+        <p>We provide services to both startups and investors through our cutting edge AI technology </p>
+        <p>We conduct data analytics and visualisation and evaluate the business models through our technology trained on real time data from the current market</p>
+      </div>
+      <div class="col s12 l6 offset-l2 grey lighten-1">
+       
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="active indigo-text text-darken-4" style={{fontSize:"20px"}}>Startup</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#editing" class="indigo-text text-darken-4" style={{fontSize:"20px"}}>Investor</a>
+          </li>
+        </ul>
+        <div id="photography" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Startup</p>
+            <p>Startups that are currently looking for funding and an idea about how they fit into the market</p>
+            <p>We conduct in depth analysis and forecasting of their model so that they have a good idea of what investors are looking at and how they will perfom in the current market</p>
+        </div>
+        <div id="editing" class="col s12">
+            <p class="flow-text indigo-text text-darken-4">Investor</p>
+            <p>In order to evaluate a business model for investment investors need an idea about the individual as well as comparative performance of a model </p>
+            <p>We here at MARY.AI give investors the tools to evaluate the startups and set up a benchmark in the market for them to understand the business model's fit</p>
+        </div>
+        </div>
+      </div>
+    
+  </section>
       <section className="container section scrollspy" id="photos">
         <div className="row">
-          <div className="col s12 l8">
+          <div className="col s12 l6 z-depth-5">
             <img
               src="graph3.png"
               alt=""
               className="responsive-img "
             ></img>
           </div>
-          <div className="col s12 l4">
+          <div className="col s12 l4 offset-l1">
             <h2 className="indigo-text text-darken-4">Target Markets</h2>
             <p>
               Our dataset comprises of a diverse set of markets. 
@@ -24,10 +59,10 @@ function Hero() {
           </div>
         </div>
         <div class="row">
-      <div class="col s12 l6  push-l7">
+      <div class="col s12 l6  push-l7 z-depth-5 ">
           <img src="graph4.png" alt="" class="responsive-img materialboxed"/>
       </div>
-      <div class="col s12 l6  pull-l5 right-align">
+      <div class="col s12 l6  pull-l6 right-align ">
         <h2 class="indigo-text text-darken-4">Investment</h2>
         <p>We are working with a huge variety of business models. 
               Here is an attempt to understand the role of total investment in the success and failure of a model.</p>
@@ -35,7 +70,7 @@ function Hero() {
     </div>
         
         <div className="row">
-          <div className="col s12 l6">
+          <div className="col s12 l6 z-depth-5">
             <img
               src="graph5.png"
               alt=""
@@ -53,52 +88,18 @@ function Hero() {
       </section>
 
 
-      <div className="parallax-container">
-        <div className="parallax">
-          <img src="wordcloud.png" alt="" className="responsive-img"></img>
-        </div>
-      </div>
+     
 
-      <section class="section container" id="services">
-    <div class="row">
-      <div class="col s12 l4">
-        <h2 class="indigo-text text-darken-4">What We do..</h2>
-        <p>We provide services to both startups and investors through our cutting edge AI technology </p>
-        <p>We conduct data analytics and visualisation and evaluate the business models through our technology trained on real time data from the current market</p>
-      </div>
-      <div class="col s12 l6 offset-l2">
-       
-        <ul class="tabs">
-          <li class="tab col s6">
-            <a href="#photography" class="active indigo-text text-darken-4">Startup</a>
-          </li>
-          <li class="tab col s6">
-            <a href="#editing" class="indigo-text text-darken-4">Investor</a>
-          </li>
-        </ul>
-        <div id="photography" class="col s12">
-            <p class="flow-text indigo-text text-darken-4">Startup</p>
-            <p>Startups that are currently looking for funding and an idea about how they fit into the market</p>
-            <p>We conduct in depth analysis and forecasting of their model so that they have a good idea of what investors are looking at and how they will perfom in the current market</p>
-        </div>
-        <div id="editing" class="col s12">
-            <p class="flow-text indigo-text text-darken-4">Investor</p>
-            <p>In order to evaluate a business model for investment investors need an idea about the individual as well as comparative performance of a model </p>
-            <p>We here at MARY.AI give investors the tools to evaluate the startups and set up a benchmark in the market for them to understand the business model's fit</p>
-        </div>
-        </div>
-      </div>
-    
-  </section>
+      
 
       
       <div className="parallax-container">
         <div className="parallax">
-          <img src="parallax2.jpg" alt="" className="responsive-img" />
+          <img src="wordcloud.png" alt="" className="responsive-img" />
         </div>
       </div>
-      <section className="section container scrollspy" id="contact">
-        <div className="row">
+      <section className="section container scrollspy " id="contact">
+        <div className="row ">
           <div className="col s12 l5">
             <h2 className="indigo-text text-darken-4">Get in Touch</h2>
             <p>
@@ -109,7 +110,7 @@ function Hero() {
             </p>
             
           </div>
-          <div className="col s12 l5 offset-l2">
+          <div className="col s12 l5 offset-l2 z-depth-2">
             <form>
               <div className="input-field">
                 <i className="material-icons prefix">email</i>
@@ -153,21 +154,15 @@ function Hero() {
           </div>
         </div>
       </section>
-      <footer className="page-footer grey darken-3">
+      <footer className="page-footer blue-grey darken-4">
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <h5>About Us</h5>
-              <p>
-                We are a small team of hustlers trying to make an impact on the world of startup investing by integrating cutting edge technology to guide investment decisions.
-              </p>
-              <p>
-              Our mission is to ensure that the benefits of AI/ML reach the startup world and allow investors to make informed decisions.
-
+              <h1>MARY.AI</h1>
                 
-              </p>
+              
             </div>
-            <div className="col l4 offset-l2 s12">
+            <div className="col l4 offset-l2 s12 ">
               <h5 className="white-text">Connect</h5>
               <ul>
                 <li>
