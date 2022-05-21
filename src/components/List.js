@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import { getCompanies } from "../APIClient/apiclient";
 import Table from 'react-bootstrap/Table'
+import './style.css'
 function ListComp() {
   const [comp, setComp] = useState([]);
   useEffect(() => {
@@ -23,7 +24,7 @@ function ListComp() {
     <div style={{ marginTop: "5%" }}>
       <Container>
         <Col xs={6}>
-          <h2>Company List</h2>
+          <h2 className="indigo-text text-darken-4">Company List</h2>
           <div style={{ marginTop: "5%" ,fontSize:"20px"}}>
             <div>
               {/* <Col style={{ padding: "20px" ,fontSize:"20px"}}>

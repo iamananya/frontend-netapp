@@ -158,7 +158,7 @@ function Hero() {
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <h1>MARY.AI</h1>
+              <h1 className="indigo-text">MARY.AI</h1>
                 
               
             </div>
@@ -180,11 +180,7 @@ function Hero() {
                     Linked In
                   </a>
                 </li>
-                <li>
-                  <a className="grey-text text-lighten-3" href="#">
-                    Instagram
-                  </a>
-                </li>
+               
               </ul>
             </div>
           </div>
