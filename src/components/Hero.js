@@ -154,7 +154,7 @@ function Hero() {
           </div>
         </div>
       </section>
-      <footer className="page-footer blue-grey darken-4">
+      <footer className="page-footer blue-grey darken-4" id="footer">
         <div className="container">
           <div className="row">
             <div className="col l6 s12">

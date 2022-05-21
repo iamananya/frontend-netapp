@@ -6,26 +6,37 @@ import Card from "react-bootstrap/Card";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import { getCompanies } from "../APIClient/apiclient";
-import Table from 'react-bootstrap/Table'
-import './style.css'
+import Table from "react-bootstrap/Table";
+import "./style.css";
+
 function ListComp() {
+  const [isLoading, setLoading] = useState(true);
   const [comp, setComp] = useState([]);
   useEffect(() => {
     (async () => {
       const res = await getCompanies();
       setComp(res.data);
+      setLoading(false);
       console.log(res.data);
       console.log(comp);
     })();
 
     // console.log('hi')
   }, []);
-  return (
+  return isLoading == true ? (
+    <Container style={{ marginTop: "5%" ,width:"20%"}}>
+        <Col xs={6}>
+        <h2 className="indigo-text text-darken-4">Company List</h2>
+          <div style={{ marginTop: "5%", fontSize: "20px" }}>
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div></div></Col></Container>
+  ) : (
     <div style={{ marginTop: "5%" }}>
       <Container>
         <Col xs={6}>
           <h2 className="indigo-text text-darken-4">Company List</h2>
-          <div style={{ marginTop: "5%" ,fontSize:"20px"}}>
+          <div style={{ marginTop: "5%", fontSize: "20px" }}>
             <div>
               {/* <Col style={{ padding: "20px" ,fontSize:"20px"}}>
                   {comp.map((i) => (
@@ -46,28 +57,25 @@ function ListComp() {
                 </Row>
                   ))}
                 </Col> */}
+                
               <Table striped bordered hover>
                 <thead>
                   <tr>
-                  
-                    <th>Comapny Name</th>
+                    <th>Comapany Name</th>
                     <th>Market Type</th>
                     <th>Country Code</th>
                     <th>Occupancy Status</th>
                   </tr>
                 </thead>
                 <tbody>
-                {comp.map((i) => (
-                  <tr>
-                 
-                    <td>{i.company_name}</td>
-                    <td>{i.market}</td>
-                    <td>{i.country_code}</td>
-                    <td>{i.status}</td>
-                 
-                  </tr>
-                   ))}
-                 
+                  {comp.map((i) => (
+                    <tr>
+                      <td>{i.name}</td>
+                      <td>{i.market}</td>
+                      <td>{i.country_code}</td>
+                      <td>{i.status}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </Table>
             </div>
