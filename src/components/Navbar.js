@@ -9,16 +9,16 @@ function Navbar() {
         <a href="/" className="brand-logo left hide-on-med-and-down indigo-text ">
           MARY.AI 
         </a>
-        <a href="/" className="sidenav-trigger " data-target="mobile-menu">
+        <Link to="/" className="sidenav-trigger " data-target="mobile-menu">
           <i className="material-icons">menu</i>
-        </a>
+        </Link>
         <ul className="right hide-on-med-and-down">
           <li>
             
-            <a href="/list" class="black-text">Companies</a>
+          <Link to='/list' className='black-text'>Companies</Link>
           </li>
           <li>
-            <a href="/charts" class="black-text">Visualizations</a>
+          <Link to="/charts" class="black-text">Visualizations</Link>
           </li>
           <li>
             <a href="#" class="black-text">Contact</a>

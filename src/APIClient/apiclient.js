@@ -1,13 +1,13 @@
 import axios from "axios";
 
-const baseUrl = 'http://ananyamahato03.pythonanywhere.com/';
+const baseUrl = 'https://ananyamahato03.pythonanywhere.com/';
 
 export const getCompanies = async () => {
-    const res = await axios.get(baseUrl + '/companies/')
+    const res = await axios.get(baseUrl + 'companies/')
     return res
 }
 
 export const getFinances = async () => {
-    const res = await axios.get(baseUrl + '/finances/')
+    const res = await axios.get(baseUrl + 'finances/')
     return res
 }
