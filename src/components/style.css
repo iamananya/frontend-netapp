@@ -34,3 +34,7 @@ nav ul a{
   font-weight: 700;
   font-size: 20px;
 }
+/* .materialboxed:hover{
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+} */
