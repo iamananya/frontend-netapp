@@ -4,24 +4,24 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div> <header>
-    <nav className="nav-wrapper blue-grey darken-4">
+    <nav className="nav-wrapper white lighter-1">
       <div className="container">
-        <a href="/" className="brand-logo left hide-on-med-and-down">
+        <a href="/" className="brand-logo left hide-on-med-and-down indigo-text ">
           MARY.AI 
         </a>
-        <a href="/" className="sidenav-trigger" data-target="mobile-menu">
+        <a href="/" className="sidenav-trigger " data-target="mobile-menu">
           <i className="material-icons">menu</i>
         </a>
         <ul className="right hide-on-med-and-down">
           <li>
             
-            <a href="/list">Companies</a>
+            <a href="/list" class="black-text">Companies</a>
           </li>
           <li>
-            <a href="/charts">Visualizations</a>
+            <a href="/charts" class="black-text">Visualizations</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#" class="black-text">Contact</a>
           </li>
           <li>
             <a

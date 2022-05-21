@@ -12,7 +12,7 @@ function Charts() {
         ></img>
       </div>
       <div className="col s12 l4 offset-l1">
-        <h2 className="indigo-text text-darken-4">Target Markets</h2>
+        <h2 className="indigo-text text-darken-4"></h2>
         <p>
           Our dataset comprises of a diverse set of markets. 
           Let's take a look at the most popular markets that startups are pusuing currently worldwide.
